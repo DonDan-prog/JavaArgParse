@@ -1,3 +1,5 @@
+package ArgumentParser;
+
 public class Argument 
 {
     /** The info about argument */

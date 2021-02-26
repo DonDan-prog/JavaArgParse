@@ -1,7 +1,9 @@
+package ArgumentParser;
+
 import java.util.HashSet;
 import java.util.LinkedList;
 
-public class ArgParse 
+public class ArgumentParser 
 {
     /** Three types of arguments - three collections to keep them */
     private LinkedList<Argument> positionalArguments;
@@ -11,7 +13,7 @@ public class ArgParse
     private String fileName = "APP";
     
     /** Default constructor; the name of app will be APP */
-    ArgParse()
+    public ArgumentParser()
     {
         this.positionalArguments = new LinkedList<Argument>();
         this.requiredArguments = new HashSet<Argument>();
@@ -21,7 +23,7 @@ public class ArgParse
     /** Parametrized constructor with the name of current app for cute show
      *  @param String for specify the file name
      */
-    ArgParse(String fileName)
+    public ArgumentParser(String fileName)
     {
         this();
         this.fileName = fileName;

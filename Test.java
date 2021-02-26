@@ -1,4 +1,6 @@
-class Main
+import ArgumentParser.*;
+
+class Test
 {
     /** Usage simple as that:
      *  1. Create variables holder
@@ -16,8 +18,8 @@ class Main
         IntHolder holder1 = new IntHolder();
         StringHolder holder2 = new StringHolder();
         IntHolder holder3 = new IntHolder();
-
-        ArgParse argParse = new ArgParse("App");
+        
+        ArgumentParser argParse = new ArgumentParser("App");
         try 
         {
             argParse.addArgument("-if %d int req var", holder1, true);

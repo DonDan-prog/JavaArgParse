@@ -1,3 +1,5 @@
+package ArgumentParser;
+
 public class StringHolder extends Holder<String>
 {
     public void setResource(String str)
